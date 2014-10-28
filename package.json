@@ -1,5 +1,5 @@
 {
-  "name": "highlandX",
+  "name": "highlandx",
   "version": "0.0.1",
   "description": "functions missing from highland.js",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/areed/highlandX.git"
+    "url": "https://github.com/areed/highlandx.git"
   },
   "keywords": [
     "functional",
@@ -16,10 +16,14 @@
   "author": "Andrew Reed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/areed/highlandX/issues"
+    "url": "https://github.com/areed/highlandx/issues"
   },
-  "homepage": "https://github.com/areed/highlandX",
+  "homepage": "https://github.com/areed/highlandx",
   "dependencies": {
     "highland": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
   }
 }
