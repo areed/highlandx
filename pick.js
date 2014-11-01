@@ -6,7 +6,7 @@ var _ = require('highland');
  * @param {Object} obj
  * @return {Object}
  */
-module.exports = function(keys, obj) {
+function pick(keys, obj) {
   var copy = {};
   
   return _(keys).reduce({}, function(copy, key) {
@@ -16,3 +16,5 @@ module.exports = function(keys, obj) {
     return copy;
   });
 };
+
+module.exports = pick;
