@@ -5,7 +5,7 @@ var _ = require('highland');
  * @param {Object} a
  * @param {Object} b
  * @return {Object}
- */
+*/
 function extend(a, b) {
   var sourceCount = arguments.length;
 

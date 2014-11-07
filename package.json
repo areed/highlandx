@@ -1,7 +1,7 @@
 {
   "name": "highlandx",
-  "version": "0.2.0",
-  "description": "functions missing from highland.js",
+  "version": "0.3.0",
+  "description": "Simple implementations of my favorite functions not included with highland.js.",
   "scripts": {
     "test": "mocha"
   },
