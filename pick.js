@@ -17,4 +17,13 @@ function pick(keys, obj) {
   });
 };
 
-module.exports = pick;
+function pickSync(keys, obj) {
+  return keys.reduce(function(copy, key) {
+    if (key in obj) {
+      copy[key] = _.get(key, obj);
+    }
+    return copy;
+  }, {});
+}
+
+module.exports = pickSync;
