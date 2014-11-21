@@ -6,17 +6,6 @@ var _ = require('highland');
  * @param {Object} obj
  * @return {Object}
  */
-function pick(keys, obj) {
-  var copy = {};
-  
-  return _(keys).reduce({}, function(copy, key) {
-    if (key in obj) {
-      copy[key] = _.get(key, obj);
-    }
-    return copy;
-  });
-};
-
 function pickSync(keys, obj) {
   return keys.reduce(function(copy, key) {
     if (key in obj) {
