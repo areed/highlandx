@@ -1,10 +1,12 @@
-/* Fogus pp 83 */
+/* Fogus page 83 */
 /**
- *
+ * Binds a predicate to an error message.
+ * @param {string} message
+ * @param {function} predicate
  */
-function validator(message, fn) {
+function validator(message, predicate) {
   var f = function(/* args */) {
-    return fn.apply(fn, arguments);
+    return predicate.apply(predicate, arguments);
   };
 
   f.message = message;

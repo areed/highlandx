@@ -1,6 +1,6 @@
 var existy = require('./existy');
 
-/* Fogus pp 105 */
+/* Fogus page 105 */
 
 /**
  * @param {Function[]} validators predicates with a message property
