@@ -19,7 +19,7 @@ function conditions(/* validators */) {
       throw new Error(errors.join(', '));
     }
 
-    return fn.apply(null, args);
+    return fn.apply(this, args);
   };
 }
 
