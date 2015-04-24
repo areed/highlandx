@@ -21,4 +21,16 @@ describe('find', function() {
       expect(find(hasHeight, list)).to.equal(undefined);
     });
   });
+
+  describe('given no list', function() {
+    it('should return undefined.', function() {
+      expect(find(function() {return true;}, null)).to.equal(undefined);
+    });
+  });
+
+  describe('given an empty list', function() {
+    it('should return undefined.', function() {
+      expect(find(function() {return true;}, [])).to.equal(undefined);
+    });
+  });
 });

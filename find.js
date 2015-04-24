@@ -5,6 +5,9 @@
  * @return {*}
  */
 function find(predicate, list) {
+  if (!list) {
+    return;
+  }
   for (var i = 0; i < list.length; i++) {
     if (predicate(list[i])) {
       return list[i];
